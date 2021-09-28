@@ -6,6 +6,7 @@ body {
 .topnav {
   background-color: #121212;
   overflow: hidden;
+  height: 40px;
 }
 
 .topnav a {
@@ -24,4 +25,10 @@ body {
 .active {
   background: linear-gradient(90deg, #191919 0%, #212121 25%, #212121 75%, #191919 100%);
 
+}
+
+.logo{
+	object-fit: contain;
+	width:30px;
+	height: 30px;
 }
