@@ -48,3 +48,9 @@ nav li a:active {
 nav li a:target {
   color: blue;
 }
+.background {
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 0;
+}
