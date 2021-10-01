@@ -20,10 +20,11 @@ nav ul {
   align-items: center;
   margin: 0;
   padding: 0;
+  padding-left: 40px;
   top: 0;
   height: 41px;
-  width: 400px;
-  background: linear-gradient(90deg, rgba(51,51,51,1) 0%, rgba(51,51,51,1) 85%, rgba(33,33,33,1) 100%);
+  width: 300px;
+  background: #333333;
 }
 nav li {
   display: flex;
@@ -32,7 +33,7 @@ nav li {
   display: inline;
 }
 nav li a {
-  padding: 10px;
+  padding-left: 10px;
   text-decoration: none;
   color: #bdbdbd;
   border-width: thick;
@@ -48,9 +49,20 @@ nav li a:active {
 nav li a:target {
   color: blue;
 }
+.navFader {
+	height: 41px;
+	width: 100px;
+	background: linear-gradient(135deg, rgba(51,51,51,1) 50%, rgba(33,33,33,0) 65%);
+}
 .background {
 	margin: 0px;
 	padding: 0px;
 	position: absolute;
 	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+    height: auto;
+    border-bottom-width: 20%;
+    border-bottom-color: solid black;
 }
