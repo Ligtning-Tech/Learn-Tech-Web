@@ -1,9 +1,18 @@
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
   background: #212121;
   color: #bdbdbd;
+}
+.color {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(195, 227, 234, 1) 25%,
+    rgba(215, 175, 98, 1) 75%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 nav {
   display: flex;
@@ -53,53 +62,121 @@ nav li a:target {
   color: blue;
 }
 .navFader {
-	height: 41px;
-	width: 100px;
-	background: linear-gradient(135deg, rgba(51,51,51,1) 50%, rgba(33,33,33,0) 65%);
+  height: 41px;
+  width: 100px;
+  background: linear-gradient(
+    135deg,
+    rgba(51, 51, 51, 1) 50%,
+    rgba(33, 33, 33, 0) 65%
+  );
 }
 .background {
-	margin: 0px;
-	padding: 0px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	width: 100%;
-    height: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-image: url("Src/Images/ballpen-rules.jpg");
+  background-size: cover;
+  background-position: center center;
 }
-.mainContContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	margin: 0px;
-	padding: 0px;
-	position: absolute;
-	top: 90%;
-	left: 0px;
-	width: 100%;
+.mainContContainerBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 95%;
+  left: 0px;
+  width: 100%;
 }
 .mainContDownArrow {
-	width: auto;
-	height:40px;
+  width: auto;
+  height: 40px;
 }
 .mainContContainerFader {
-	display: flex;
-	justify-content: center;
-	background: linear-gradient(0deg, rgba(51,51,51,1) 0%, rgba(33,33,33,0) 100%);
-	width: 100%;
-	height: 45px;
-	margin: 0;
-	padding:0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    0deg,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(33, 33, 33, 0) 100%
+  );
+  top: -45px;
+  width: 100%;
+  height: 45px;
+  margin: 0;
+  padding: 0;
+}
+.mainContContainerBottomFader {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(33, 33, 33, 0) 100%
+  );
+  top: -45px;
+  width: 100%;
+  height: 45px;
+  margin: 0;
+  padding: 0;
 }
 .mainCont {
-	background: rgba(51,51,51,1);
-	width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: rgba(51, 51, 51, 1);
+  width: 100%;
 }
 .mainCont P {
-	font-size: 30px;
-	text-align: center;
+  font-size: 30px;
+  text-align: center;
 }
 .mainCont a {
-	color: #bdbdbd;
+  color: #bdbdbd;
+}
+.mainContContainerTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 10%;
+  left: 0px;
+  width: 100%;
+  height: 90%;
+  z-index: -1;
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  text-align: center;
+}
+.gridContainer P {
+  font-size: 20px;
+  text-align: left;
+  padding: 20px;
+  padding-bottom: 0px;
+  margin: 0px;
+  width: 75%;
+}
+.gridContainer a {
+  text-decoration: none;
+}
+.gridContainer ul {
+  margin-top: 5px;
+  text-align: left;
+}
+.gridItem {
+  display: flex;
+  justify-content: center;
 }
