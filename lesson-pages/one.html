@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="se" id="lessonpage">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,16 +27,8 @@
     <div class="mainContContainerTop">
       <div class="mainContContainerFader"></div>
       <div class="mainCont" id="lesson">
-        <video
-          width="80%"
-          height="auto"
-          controls
-          poster="..\Src\Images\star-wars-imperial-fleet-blueprint-i20817.png"
-        >
-          <source
-            src="../Src/Video/Teknik för tolvåringar (Vad är en ritning).mp4"
-            type="video/mp4"
-          />
+        <video width="80%" height="auto" controls poster="..\Src\Images\star-wars-imperial-fleet-blueprint-i20817.png">
+          <source src="../Src/Video/Teknik för tolvåringar (Vad är en ritning).mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <a href="#questions">
@@ -71,7 +64,7 @@
               <input type="submit" value="Rätta" id="submittButton" />
             </form>
           </div>
-          <a href="#">
+          <a href="../lessons.html">
             <p>Till fler genomgångar</p>
           </a>
         </div>
@@ -79,12 +72,13 @@
       </div>
     </div>
   </body>
+
 </html>
 
 <script type="text/javascript">
   const form = document.querySelector("#answers");
 
-  form.addEventListener("submit", function (event) {
+  form.addEventListener("submit", function(event) {
     // stop site reload/form submission
     event.preventDefault();
     // validate the form
@@ -101,4 +95,5 @@
       window.location = "one.html";
     }
   });
+
 </script>
